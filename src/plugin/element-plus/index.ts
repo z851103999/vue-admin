@@ -36,7 +36,10 @@ import {
   ElCard,
   // 指令
   ElLoading,
-  ElInfiniteScroll
+  ElInfiniteScroll,
+  ElConfigProvider,
+  ElForm,
+  ElFormItem
 } from "element-plus";
 
 // Directives
@@ -76,7 +79,10 @@ const components = [
   ElCollapse,
   ElCollapseItem,
   ElDialog,
-  ElCard
+  ElCard,
+  ElConfigProvider,
+  ElForm,
+  ElFormItem
 ];
 
 export function useElementPlus(app: App) {

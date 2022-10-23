@@ -26,10 +26,12 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@vueuse/motion": "2.0.0-beta.12",
     "axios": "^1.1.2",
     "dayjs": "^1.11.5",
     "element-plus": "^2.2.18",
     "js-cookie": "^3.0.1",
+    "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.23",
     "qs": "^6.11.0",
@@ -39,6 +41,7 @@
     "vue-types": "^4.2.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@intlify/vite-plugin-vue-i18n": "^6.0.3",
