@@ -3,6 +3,35 @@ module.exports = {
   env: {
     node: true
   },
+  globals: {
+    // Ref sugar (take 2)
+    $: "readonly",
+    $$: "readonly",
+    $ref: "readonly",
+    $shallowRef: "readonly",
+    $computed: "readonly",
+
+    // index.d.ts
+    // global.d.ts
+    Fn: "readonly",
+    PromiseFn: "readonly",
+    RefType: "readonly",
+    LabelValueOptions: "readonly",
+    EmitType: "readonly",
+    TargetContext: "readonly",
+    ComponentElRef: "readonly",
+    ComponentRef: "readonly",
+    ElRef: "readonly",
+    global: "readonly",
+    ForDataType: "readonly",
+    ComponentRoutes: "readonly",
+
+    // script setup
+    defineProps: "readonly",
+    defineEmits: "readonly",
+    defineExpose: "readonly",
+    withDefaults: "readonly"
+  },
   extends: [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
@@ -20,29 +49,6 @@ module.exports = {
       jsx: true
     }
   },
-  overrides: [
-    {
-      files: ["*.ts", "*.vue"],
-      rules: {
-        "no-undef": "off"
-      }
-    },
-    {
-      files: ["*.vue"],
-      parser: "vue-eslint-parser",
-      parserOptions: {
-        parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".vue"],
-        ecmaVersion: "latest",
-        ecmaFeatures: {
-          jsx: true
-        }
-      },
-      rules: {
-        "no-undef": "off"
-      }
-    }
-  ],
   rules: {
     "vue/no-v-html": "off",
     "vue/require-default-prop": "off",
